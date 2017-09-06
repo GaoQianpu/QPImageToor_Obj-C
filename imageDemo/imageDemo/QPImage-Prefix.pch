@@ -1,0 +1,18 @@
+//
+//  QPImage-Prefix.pch
+//  imageDemo
+//
+//  Created by 枫、 on 2017/9/6.
+//  Copyright © 2017年 枫、. All rights reserved.
+//
+
+#ifndef QPImage_Prefix_pch
+#define QPImage_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "define.h"
+
+#import "include.h"
+
+#endif /* QPImage_Prefix_pch */

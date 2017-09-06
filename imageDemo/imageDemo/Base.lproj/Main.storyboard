@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XWT-fW-TTy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPr-VJ-lsW">
+                                <rect key="frame" x="143" y="134" width="89" height="30"/>
+                                <state key="normal" title="改变图片size"/>
+                                <connections>
+                                    <action selector="upDataSizeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYB-GT-jBt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-fj-Qz3">
+                                <rect key="frame" x="156.5" y="176" width="62" height="30"/>
+                                <state key="normal" title="图片拉伸"/>
+                                <connections>
+                                    <action selector="StretchClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OF3-pS-Zgj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7F-lU-O8m">
+                                <rect key="frame" x="156.5" y="218" width="62" height="30"/>
+                                <state key="normal" title="图片裁剪"/>
+                                <connections>
+                                    <action selector="cuteImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCp-gV-7vw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGO-da-rLq">
+                                <rect key="frame" x="156.5" y="260" width="62" height="30"/>
+                                <state key="normal" title="图片拼接"/>
+                                <connections>
+                                    <action selector="puzzleClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBj-CI-zd0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OGO-da-rLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ty-cY-i3X"/>
+                            <constraint firstItem="tPr-VJ-lsW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6HF-gp-pMI"/>
+                            <constraint firstItem="tPr-VJ-lsW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="CeW-bi-Cqv"/>
+                            <constraint firstItem="s5b-fj-Qz3" firstAttribute="top" secondItem="tPr-VJ-lsW" secondAttribute="bottom" constant="12" id="D7U-Is-SvT"/>
+                            <constraint firstItem="OGO-da-rLq" firstAttribute="top" secondItem="D7F-lU-O8m" secondAttribute="bottom" constant="12" id="YXW-Kc-2Nk"/>
+                            <constraint firstItem="D7F-lU-O8m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8o-yL-sPV"/>
+                            <constraint firstItem="D7F-lU-O8m" firstAttribute="top" secondItem="s5b-fj-Qz3" secondAttribute="bottom" constant="12" id="cBH-Yh-RSS"/>
+                            <constraint firstItem="s5b-fj-Qz3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s2n-GH-IsW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qD6-YL-Urq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KnK-iv-k0o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWT-fW-TTy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="15I-Ms-qyp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SYM-DU-xB8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PZ-VT-dgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="-645.42728635682158"/>
+        </scene>
+    </scenes>
+</document>
